@@ -58,6 +58,7 @@
   "DoResourceInheritance": [],
   "SmallLake": [],
   "Dungeon": [],
+  "Fossil": [],
   "UnderGroundLake": [],
   "Ore": [],
   "UnderWaterOre": [],
@@ -75,9 +76,5 @@
   "Vein": [],
   "Well": [],
   "Boulder": [],
-  "IceSpike": [],
-  "SpawnMonsters": "",
-  "SpawnCreatures": "",
-  "SpawnWaterCreatures": "",
-  "SpawnAmbientCreatures": ""
+  "IceSpike": []
 }

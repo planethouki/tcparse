@@ -23,6 +23,7 @@ biomeFileNames.forEach((biomeFileName, index, array) => {
         biomeParameterValue.forEach((element, index, array) => {
           out.push(element);
         })
+        break;
     }
 
   })

@@ -17,10 +17,11 @@ biomeFiles.forEach((biomeFileName, index, array) => {
   .filter((element, index, array) => {
     var flgSharp = !element.startsWith('#');
     var flgEmpty = !element.length == 0;
-    return(flgSharp && flgEmpty);
+    var flgSpawn = !element.startsWith('Spawn');
+    return(flgSharp && flgEmpty && flgSpawn);
   })
   biomeTextFilteredArray.forEach((biomeTextLine, index, array) => {
-    if (biomeTextLine.indexOf(': ') > -1) {
+    if (biomeTextLine.includes(': ')) {
       var b = biomeTextLine.indexOf(': ');
       biome[biomeTextLine.substring(0, b)] = biomeTextLine.substring(b+1).trim();
     } else {
@@ -34,4 +35,4 @@ biomeFiles.forEach((biomeFileName, index, array) => {
 });
 
 // fs.writeFileSync("./temp.txt", JSON.stringify(debug), 'utf8');
-fs.writeFileSync("./out.json", JSON.stringify(biomes), 'utf8');
+fs.writeFileSync("./Biomes.json", JSON.stringify(biomes), 'utf8');
