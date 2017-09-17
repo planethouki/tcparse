@@ -2,7 +2,7 @@ const BIOME_INPUT_FOLDER = './WorldBiomesInput/';
 const BIOME_OUTPUT_FOLDER = './WorldBiomesOutput/';
 
 var fs = require('fs');
-var tckeys = JSON.parse(fs.readFileSync('./keys.json', 'utf8'));
+var biomeObjText = fs.readFileSync('./keys.json', 'utf8');
 var biomeFiles = fs.readdirSync(BIOME_INPUT_FOLDER, 'utf8');
 
 var debug = new Array();
@@ -10,8 +10,8 @@ var biomes = new Object();
 
 biomeFiles.forEach((biomeFileName, index, array) => {
   console.log(biomeFileName);
-  var biome = new Object();
-  
+  var biome = JSON.parse(biomeObjText);
+
   var biomeFileTextReadAll = fs.readFileSync(BIOME_INPUT_FOLDER + biomeFileName,'utf8');
   var biomeTextFilteredArray = biomeFileTextReadAll.replace(/\r\n?/g,'\n').split('\n')
   .filter((element, index, array) => {
@@ -29,9 +29,9 @@ biomeFiles.forEach((biomeFileName, index, array) => {
     }
   })
   // console.log(biomeTextFilteredArray);
-  debug.push(biomeTextFilteredArray);
+  // debug.push(biomeTextFilteredArray);
   biomes[biomeFileName] = biome;
 });
 
 // fs.writeFileSync("./temp.txt", JSON.stringify(debug), 'utf8');
-fs.writeFileSync("./temp.txt", JSON.stringify(biomes), 'utf8');
+fs.writeFileSync("./out.json", JSON.stringify(biomes), 'utf8');
