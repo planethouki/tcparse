@@ -1,0 +1,82 @@
+ResourceInheritance: true
+BiomeSize: 4
+BiomeRarity: 100
+BiomeColor: #8DB360
+BiomeSizeWhenIsle: 6
+BiomeRarityWhenIsle: 97
+BiomeSizeWhenBorder: 8
+BiomeHeight: 0.125
+BiomeVolatility: 0.05
+SmoothRadius: 2
+MaxAverageHeight: 0.0
+MaxAverageDepth: 0.0
+Volatility1: 0.0
+Volatility2: 0.0
+VolatilityWeight1: 0.5
+VolatilityWeight2: 0.45
+DisableBiomeHeight: false
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+RiverBiome: River
+RiverHeight: -1.0
+RiverVolatility: 0.3
+RiverWaterLevel: 63
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+StoneBlock: minecraft:stone
+SurfaceBlock: minecraft:grass
+GroundBlock: minecraft:dirt
+ReplacedBlocks: None
+UseWorldWaterLevel: true
+WaterLevelMax: 63
+WaterLevelMin: 0
+WaterBlock: minecraft:water
+IceBlock: minecraft:ice
+CooledLavaBlock: minecraft:lava
+BiomeTemperature: 0.8
+BiomeWetness: 0.4
+SkyColor: #7BA5FF
+WaterColor: #FFFFFF
+GrassColor: #FFFFFF
+GrassColorIsMultiplier: true
+FoliageColor: #FFFFFF
+FoliageColorIsMultiplier: true
+StrongholdsEnabled: false
+OceanMonumentsEnabled: false
+NetherFortressesEnabled: true
+MansionsEnabled: false
+VillageType: wood
+MineshaftType: normal
+MineshaftRarity: 1.0
+RareBuildingType: disabled
+SmallLake(minecraft:water,4,7.0,8,119)
+SmallLake(minecraft:lava,2,1.0,8,119)
+Dungeon(8,100.0,0,128)
+UnderGroundLake(25,60,2,5.0,0,49)
+Ore(minecraft:dirt,33,10,100.0,0,255,minecraft:stone)
+Ore(minecraft:gravel,33,8,100.0,0,255,minecraft:stone)
+Ore(minecraft:stone:1,33,10,100.0,0,79,minecraft:stone)
+Ore(minecraft:stone:3,33,10,100.0,0,79,minecraft:stone)
+Ore(minecraft:stone:5,33,10,100.0,0,79,minecraft:stone)
+Ore(minecraft:coal_ore,17,20,100.0,0,127,minecraft:stone)
+Ore(minecraft:iron_ore,9,20,100.0,0,63,minecraft:stone)
+Ore(minecraft:gold_ore,9,2,100.0,0,31,minecraft:stone)
+Ore(minecraft:redstone_ore,8,8,100.0,0,15,minecraft:stone)
+Ore(minecraft:diamond_ore,8,1,100.0,0,15,minecraft:stone)
+Ore(minecraft:lapis_ore,7,1,100.0,0,15,minecraft:stone)
+UnderWaterOre(minecraft:sand,7,3,100.0,minecraft:dirt,minecraft:grass)
+UnderWaterOre(minecraft:clay,4,1,100.0,minecraft:dirt,minecraft:clay)
+UnderWaterOre(minecraft:gravel,6,1,100.0,minecraft:dirt,minecraft:grass)
+CustomObject(UseWorld)
+Plant(Poppy,1,100.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(Dandelion,3,100.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(OrangeTulip,3,25.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(RedTulip,3,25.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(WhiteTulip,3,25.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(PinkTulip,3,25.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(AzureBluet,3,100.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(OxeyeDaisy,3,100.0,0,128,minecraft:grass,minecraft:dirt)
+Plant(minecraft:pumpkin,1,3.0,0,128,minecraft:grass)
+Grass(DoubleTallgrass,Grouped,10,15.0,minecraft:grass,minecraft:dirt)
+Grass(Tallgrass,NotGrouped,100,100.0,minecraft:grass,minecraft:dirt)
+Reed(minecraft:reeds,5,100.0,0,128,minecraft:grass,minecraft:dirt,minecraft:sand)
+Liquid(minecraft:water,20,100.0,8,128,minecraft:stone)
+Liquid(minecraft:lava,10,100.0,8,128,minecraft:stone)
